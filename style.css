@@ -1,3 +1,262 @@
-.background{
-background-image:url(https://i.ibb.co/4KY3Kcp/background-pattern.png)
+header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    
 }
+
+nav {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: center;
+    padding: 20px;
+    
+}
+body{
+    margin: auto;
+}
+#menu{
+    display:flex; 
+    flex-direction: row;
+    justify-content: flex-end;
+   /*  justify-items:center; */
+    /* padding-left: 20%; */
+    
+
+}
+h1 {
+    text-align: center;
+    font-size: 150%;
+    margin: 0%;
+}
+
+h2 {
+    margin: 0;
+    }
+
+h3 {
+    color: #f76801;
+    margin: 0;
+}
+p {
+    line-height: 150%;
+    margin-right: 10%;
+}
+
+i {
+    padding: 1vw;
+    margin-right: 10px;
+}
+iframe {
+    width: 100%;
+    height: 90%;
+}
+#para1 {
+    font-style: italic;
+    font-size: larger;
+    line-height: 150%;
+    font-weight: bold;
+    color: rgb(139, 139, 139);
+    text-align: center;
+    padding: 20px 50px;
+
+}
+
+ul {
+    list-style: none;
+    margin: 0%;
+}
+
+#logo {
+    width: 100px;
+
+}
+.logo {
+    text-align: center;
+}
+/* main {
+    margin-top: 25vh;
+} */
+
+.background {
+    background-image: url("https://i.ibb.co/4KY3Kcp/background-pattern.png");
+}
+.grid {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: center;
+    background-image: url("https://i.ibb.co/4KY3Kcp/background-pattern.png");
+
+}
+.one {
+    border-bottom:  5px solid #f76801;
+}
+.two {
+    border-bottom:  5px solid #fbd049;
+
+}
+.three {
+    border-bottom:  5px solid #9ec64b;
+    
+}
+.four {
+    border-bottom:  5px solid #3f91c1;
+   
+}
+.five {
+    border-bottom:  5px solid #c078d0;
+   
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgb(218, 215, 215);
+}
+.image {
+    border: 1px solid rgb(218, 215, 215);
+    padding: 10px;
+    object-fit: cover;
+
+}
+.photo {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vw;
+
+}
+/*  .grid-img{
+            text-align: center;
+        }
+        .grid-img img {
+            width: 90%;
+            border: 1px solid rgba(0,0,0,0.1);
+            padding: 10px;
+        }
+        .wrap-grid{
+            padding: 30px;
+            max-width: 1200px;
+            margin:  auto;
+            display: grid;
+            grid-gap: 5rem;
+          a{
+             text-decoration:none;
+         } */
+.affichage {
+    display: grid;
+    grid-template-columns: 20% 20% 45%;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+.welcome {
+    box-shadow: 0 0 5px darkgrey;
+    padding: 20px 10px;
+}
+span {
+    color: grey;
+    font-style: italic;
+}
+figure {
+    text-align: center;
+    margin: 0;
+}
+.poisson {
+    width: 100%;
+}
+footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.links {
+    display: flex;
+    justify-content: flex-end;
+}
+.margin {
+    border-right: 2px solid rgb(122, 121, 121);
+
+}
+#ligne {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+ul.hidden{
+visibility: hidden;
+height:0;
+width: fit-content;
+
+
+}
+.titre:hover ul.hidden{
+    visibility: visible;
+    padding: 0%;
+}
+/* changement telephone */
+
+@media screen and (max-width:600px) {
+    .affichage {
+        display: block;
+        justify-content: center;
+
+    }
+   
+    .wrap-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+        .photo {
+            display: inline-block;
+            text-align: center;
+            justify-content: center;
+
+            padding: 0;
+        }
+
+        #ligne {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: none;
+
+        }
+        .grid {
+           
+            display: grid;
+            grid-template-columns: 50% 50%;
+            
+            justify-content: center;
+            background-image: url("https://i.ibb.co/4KY3Kcp/background-pattern.png");
+        }
+
+        footer {
+            display: flex;
+           flex-direction: column-reverse;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .center {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+          nav{
+    display: block;
+    padding: 0%;
+    }
+h2{
+    font-size: 0.9rem;
+    }
+    .titre{
+        padding: 0%;
+    }
+ 
+    
+        #menu{
+            display: grid;
+            grid-template-columns: 15% 23% 25% 24% 13%;
+        }
+        
+    }
+        
